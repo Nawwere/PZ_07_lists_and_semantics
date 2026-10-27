@@ -3,30 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Памятка участника хакатона</title>
+  <title>Городской фестиваль</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <main class="page">
-    <h1>Памятка участника хакатона</h1>
-    <h2>Что взять с собой</h2>
-    <div class="items">
-      <div>Ноутбук и зарядное устройство</div>
-      <div>Наушники</div>
-      <div>Документ</div>
-      <div>Бутылка воды</div>
-    </div>
+  <main class="event">
+    <h1 class="event__title">Городской фестиваль</h1>
 
-    <h2>Порядок регистрации</h2>
-    <div class="steps">
-      <div>Подойти к стойке регистрации</div>
-      <div>Назвать команду</div>
-      <div>Получить бейдж</div>
-    </div>
+    <!-- Пункт 1: маркированный список -->
+    <section class="event__section">
+      <h2>Что взять с собой</h2>
+      <ul class="event__items">
+        <li>Бутылка воды</li>
+        <li>Заряженный телефон</li>
+        <li>Удобная обувь</li>
+      </ul>
+    </section>
 
-    <div class="quote">Хороший интерфейс начинается с понятной структуры.</div>
-    <div class="event-date">26 сентября 2026, 10:00</div>
-    <div class="contacts">Оргкомитет: hello@example.com</div>
+    <!-- Пункт 2: нумерованный список -->
+    <section class="event__section">
+      <h2>Порядок регистрации</h2>
+      <ol class="event__steps">
+        <li>Заполнить форму</li>
+        <li>Получить письмо</li>
+        <li>Показать QR-код на входе</li>
+      </ol>
+    </section>
+
+    <!-- Пункт 3: цитата -->
+    <blockquote class="event__quote">
+      <p>«Это был лучший фестиваль за последние годы — атмосфера просто невероятная!»</p>
+      <footer class="event__quote-source">— <cite>Анна, участница 2025 года</cite></footer>
+    </blockquote>
+
+    <!-- Пункт 4: дата с datetime -->
+    <p class="event__date">
+      <time datetime="2026-10-12T11:00">12 октября 2026, 11:00</time>
+    </p>
+
+    <!-- Пункт 5: адрес с mailto -->
+    <address class="event__contact">
+      Оргкомитет: <a href="mailto:city@example.com">city@example.com</a>
+    </address>
+
+    <!-- Пункт 6: strong и em -->
+    <p class="event__note">
+      <strong>Важно:</strong> вход <em>только по QR-коду</em>, бумажные билеты не принимаются.
+    </p>
+
+    <!-- Дополнительное задание: список определений -->
+    <section class="event__section">
+      <h2>Полезные термины</h2>
+      <dl class="event__terms">
+        <dt>Семантика</dt>
+        <dd>Использование HTML-тегов по их смысловому назначению.</dd>
+
+        <dt>Доступность</dt>
+        <dd>Свойство сайта быть удобным для всех пользователей, включая людей с ограниченными возможностями.</dd>
+      </dl>
+    </section>
   </main>
 </body>
 </html>

@@ -1,5 +1,43 @@
-body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
-.page { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
-.items, .steps { padding: 20px; background: white; border: 1px solid #ddd; }
-.quote { margin: 28px 0; padding-left: 18px; border-left: 4px solid #555; font-style: italic; }
-.event-date, .contacts { margin-top: 12px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font: 16px/1.5 Arial, sans-serif;
+  color: #141414;
+  background: #f7f7f4;
+  padding: 40px 20px;
+}
+
+.event { max-width: 720px; margin: 0 auto; }
+.event__title { font-size: 36px; margin-bottom: 24px; }
+.event__section { margin-bottom: 32px; }
+.event__section h2 { font-size: 22px; margin-bottom: 12px; }
+
+/* Списки */
+.event__items, .event__steps { padding-left: 20px; margin-bottom: 12px; }
+.event__items li, .event__steps li { margin-bottom: 6px; }
+
+/* Цитата */
+.event__quote {
+  padding: 20px 24px;
+  margin: 24px 0;
+  border-left: 4px solid #6c5ce7;
+  background: #fff;
+  border-radius: 8px;
+  font-style: italic;
+}
+.event__quote-source { margin-top: 8px; font-size: 14px; color: #555; }
+
+/* Дата */
+.event__date { font-size: 18px; font-weight: 600; margin: 20px 0; }
+
+/* Адрес */
+.event__contact { font-size: 16px; margin-bottom: 20px; }
+.event__contact a { color: #6c5ce7; }
+.event__contact a:hover { text-decoration: underline; }
+
+/* strong и em */
+.event__note { font-size: 16px; color: #333; }
+.event__note strong { color: #e74c3c; }
+
+/* Список определений */
+.event__terms dt { font-weight: 700; margin-top: 12px; }
+.event__terms dd { margin-left: 20px; color: #555; }
